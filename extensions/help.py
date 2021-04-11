@@ -45,6 +45,8 @@ class HelpCog(commands.Cog):
         utils_cog = self.bot.get_cog('UtilsCog')
         elu = discord.utils.find(lambda c: c.name == utils_cog.settings.ELUS_ROLE, self.guild.roles)        
 
+        print(elu)
+        print(self.channel_help)
         await self.channel_help.send(f"{ctx.author.mention} appelle un {elu.mention} à l'aide !")
         await ctx.message.add_reaction('\U0001F9BE')
 

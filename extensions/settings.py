@@ -5,8 +5,8 @@ class Settings:
         self.ADMIN_ROLE=os.getenv('BOT_ADMIN_ROLE','Admin')
         self.GUILD_NAME=os.getenv('GUILD_NAME')
         self.BOT_PREFIX=os.getenv('BOT_PREFIX','!')
-        self.CHANNEL_ELUS=os.getenv('BOT_CHANNEL_ELUS')
-        self.ELUS_ROLE=os.getenv('CHANNEL_ELUS_NAME')
+        self.CHANNEL_ELUS=os.getenv('CHANNEL_ELUS_NAME')
+        self.ELUS_ROLE=os.getenv('ELUS_ROLE')
 
 
     def as_string(self):
